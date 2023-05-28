@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGNUP FORM</title>
+	<script type="text/javascript" language="javascript">
+	function validateForm() {
+  let x = document.forms["myForm"]["Email"]["School"]["Region"]["Contact"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+<fieldset>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<label for="one">School</label>: <input size="30" type="text" name="Email" id="one">
+</br></br>
+Contact:<input size="30" type="numbers" name="Name of school"></br></br>
+Email:<input size="30" type="text" name="Email"></br></br>
+Region:<input  size="30" type="text" name="Region"></br></br>
+<input type="submit" value="Create">
+</form>
+</fieldset>
+</br>
+</br>
+<a href="login.html">LOGIN</a>
+</body>
+</html>
